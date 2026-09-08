@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Digital - M. Haikal Pratama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d5c3a;
+            --primary-light: #1b8a5a;
+            --accent: #d4af37;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(13, 92, 58, 0.9), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80') center/cover;
+            padding: 100px 20px 60px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .profile-title h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .profile-title p {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 3px;
+            background: var(--accent);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        .about-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            margin-bottom: 50px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .about-card p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-list, .interest-list {
+            list-style: none;
+        }
+
+        .skill-list li, .interest-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            margin-bottom: 50px;
+        }
+
+        .project-header {
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            padding: 20px 25px;
+            color: white;
+        }
+
+        .project-body {
+            padding: 25px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: var(--bg-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #090d16;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .profile-title h1 { font-size: 2rem; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-title">
+            <h1>M. Haikal Pratama</h1>
+            <p>Seni Musisi Hadroh & Pengembang Kegiatannya (Non-Akademik / Islamic Arts)</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Tentag Saya -->
+        <div class="about-card">
+            <p>Halo! Saya <strong>M. Haikal Pratama</strong>. Saya memiliki minat dan fokus yang besar pada bidang non-akademik, khususnya seni musik Islami dan kegiatan olahraga. Bagi saya, seni Hadroh bukan sekadar hobi, melainkan sarana syiar, pelestarian budaya Islamic arts, dan bentuk ekspresi kreativitas musikal.</p>
+        </div>
+
+        <!-- Keahlian & Minat -->
+        <div class="grid-2">
+            <div class="card">
+                <h3>🥁 Keahlian Musik (Hadroh)</h3>
+                <ul class="skill-list">
+                    <li><span>Rebana / Terbang</span> <strong>Tingkat Lanjut</strong></li>
+                    <li><span>Keprak / Marawis</span> <strong>Mahir</strong></li>
+                    <li><span>Darbuka / Bass Hadroh</span> <strong>Menengah</strong></li>
+                    <li><span>Aransemen Ritme Sholawat</span> <strong>Kreatif</strong></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🏆 Minat Non-Akademik & Islamic</h3>
+                <ul class="interest-list">
+                    <li><span>Seni Musik Hadroh & Sholawat</span> <strong>Utama</strong></li>
+                    <li><span>Olahraga & Kebugaran</span> <strong>Aktif</strong></li>
+                    <li><span>Kegiatan Seni Islami</span> <strong>Pengembang</strong></li>
+                    <li><span>Kerja Sama Tim & Kolaborasi</span> <strong>Solid</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Proyek Utama -->
+        <div class="section-title">
+            <h2>Proyek Utama yang Ditampilkan</h2>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Grup Musikal & Performansi Hadroh Islami</h3>
+                <span class="badge">PROYEK SENI ISLAMI</span>
+            </div>
+            <div class="project-body">
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    Proyek ini menampilkan pertunjukan seni Hadroh kontemporer dan tradisional. Berfokus pada perpaduan ritme perkusi Islami yang harmonis untuk mengiringi lantunan sholawat dalam berbagai kegiatan keagamaan dan panggung seni non-akademik.
+                </p>
+                <ul style="color: var(--text-light); padding-left: 20px; line-height: 1.8;">
+                    <li>Penataan aransemen ketukan perkusi (Rebana, Keprak, Darbuka).</li>
+                    <li>Pengembangan kekompakan tim dalam penampilan live panggung.</li>
+                    <li>Integrasi nilai-nilai Islamic culture dalam pertunjukan seni kontemporer.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 M. Haikal Pratama - Digital Portfolio (Non-Academic & Islamic Arts Focus)</p>
+    </footer>
+
+</body>
+</html>
